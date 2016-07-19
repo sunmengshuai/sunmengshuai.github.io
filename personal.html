@@ -1,0 +1,419 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" href="css/timeline.css">
+    <style>
+        *{
+            margin:0px;
+            padding:0px;
+            list-style:none;
+        }
+        a{
+            text-decoration:none;
+        }
+        body{
+            font-family: 'Microsoft YaHei', 宋体, 'Segoe UI', 'Lucida Grande', Helvetica, Arial, sans-serif, FreeSans, Arimo;
+        }
+        img{
+            vertical-align: top;
+        }
+        .head{
+            width:100%;
+            height:100px;
+            background:url(img/beijingtu/gf002.gif);
+            overflow: hidden;
+        }
+        .clearfix:after{
+            display:block;
+            content:'';
+            clear:both;
+        }
+        .clearfix{
+            zoom:1;
+        }
+        #ul1{
+            width: 200px;
+            margin:30px 0 0 120px;
+        }
+        #ul1 li{
+            float: left;
+            font-size: 30px;
+            width: 24px;
+            height: 35px;
+            overflow: hidden;
+            position: relative;
+            color: #fff;
+        }
+        #ul1 img{
+            position: absolute;
+            left: 0;
+            top: 0;
+        }
+        #top_bottom1{
+            width: 51px;
+            height: 51px;
+            position: fixed;
+            bottom:75px;
+            right: 60px;
+            background: url(img/top_bottom.png) no-repeat 0 0;
+            cursor:pointer;
+            display: none;
+            z-index: 999;}
+        #top_bottom1:hover{
+            background: url(img/top_bottom.png) no-repeat 0 -51px;
+        }
+        .tit{
+            width:700px;
+            margin:-30px 0px 0px 700px;
+            position: relative;
+        }
+        .tit li{
+            width:100px;
+            height:35px;
+            float: left;
+            font-size:17px;
+            line-height:35px;
+            text-align: center;
+            margin-right:31px;
+            cursor: pointer;
+
+        }
+        .tit .li1{
+            z-index:999;
+            position: relative;
+        }
+        .tit li a{
+            color: #fff;
+            font-family:宋体;
+        }
+        .tit .opa{
+            position: absolute;
+            left:520px;
+            top:0px;
+            background: #e8e537;
+            opacity:0.5;
+            width:110px;
+            height:37px;
+            border:0;
+        }
+        /*头像介绍部分*/
+        .htmleaf-content{
+            width: 885px;
+            margin:30px auto;
+        }
+        .card {
+            background: #fff;
+            display: inline-block;
+            margin: 4em;
+            box-shadow: .5em 0 1.25em #ccc;
+            border-radius: .3em;
+            overflow: hidden;
+            max-width: 20em;
+            padding-left:4px;
+        }
+        .card2{
+            height:275px;
+        }
+        .card h2{
+            height:65px;
+            line-height:65px;
+            font-weight:bold;
+            color: #000;
+        }
+        .card img{
+            display: block;
+        }
+        .card2 h3{
+            color: #525252;
+            height:30px;
+            line-height:30px;
+            padding-left:10px;
+        }
+        .card2 span{
+            height:20px;
+            line-height:20px;
+            font-size:18px;
+            font-family:楷体;
+            padding:0 0 0 7px;
+        }
+        .card2 .card2_span{
+            padding:5px 0 30px 0;
+            display: block;
+        }
+        .card2 .card2_span1{
+            padding:5px 0 47px 0;
+            display: block;
+        }
+        /*头像介绍部分*/
+        /*footer部分个人具体信息*/
+            footer{
+                width:947px;
+                margin:20px auto;
+                /*border:1px solid #f00;*/
+
+            }
+            footer h2{
+                text-align:center;
+                height:80px;
+                line-height:30px;
+            }
+            footer div{
+                width:450px;
+                height:500px;
+                float: left;
+                box-shadow:1px 2px 16px rgba(0,0,0,.5);
+            }
+            .foot_box2{
+                float: right;
+            }
+            .foot_box1{
+                background: #fff;
+            }
+            .foot_box1 dl{
+                width:300px;
+                height:350px;
+                /*border:1px solid #f00;*/
+                margin:20px auto;
+                color: #252525;
+
+            }
+            .foot_box1 dt{
+                float: left;
+                width:90px;
+                height:20px;
+                border-left:2px solid #33d685;
+                line-height:20px;
+                position: relative;
+                padding-left:10px;
+                margin-bottom:30px;
+            }
+            .foot_box1 dd{
+                width:188px;
+                height:20px;
+                line-height:20px;
+                float: left;
+                padding-left:28px;
+                margin-bottom:30px;
+            }
+        .foot_box1 dt:hover span{
+            opacity:1;
+        }
+            .foot_box1 h3{
+                text-align: center;
+                height:40px;
+                line-height:40px;
+                margin-top:20px;
+            }
+            .foot_box1 span{
+                width:295px;
+                height:2px;
+                background: #33d685;
+                position: absolute;
+                left:0px;
+                top:25px;
+                opacity:0;
+            }
+        /*footer部分个人具体信息*/
+    </style>
+    <script src="js/personal.js"></script>
+    <script src="js/move.js"></script>
+    <script src="js/modernizr.js"></script>
+    <script src="js/title.tantiao2.js"></script>
+    <script src="js/jquery-1.8.3.min.js"></script>
+</head>
+<body>
+<div id="top_bottom1"></div>
+<div class="head">
+    <ul id="ul1" class="clearfix">
+        <li><img src="img/num.png" /></li>
+        <li><img src="img/num.png" /></li>
+        <li class="white">:</li>
+        <li><img src="img/num.png" /></li>
+        <li><img src="img/num.png" /></li>
+        <li class="white">:</li>
+        <li><img src="img/num.png" /></li>
+        <li><img src="img/num.png" /></li>
+    </ul>
+    <ul class="tit clearfix" id="ul2">
+        <li class="li1"><a href="index.html">首页</a></li>
+        <li class="li1"><a href="css.html">HTML/CSS</a></li>
+        <li class="li1"><a href="js.html">JavaScript</a></li>
+        <li class="li1"><a href="javascript:;">CSS3/HTML5</a></li>
+        <li class="li1"><a href="personal.html">联系我</a></li>
+        <li class="opa"></li>
+    </ul>
+</div>
+<!--头部信息-->
+<div class="htmleaf-content">
+    <div class="card">
+        <h2>Content</h2>
+        <img src="img/head.jpg" width="300" />
+    </div>
+    <div class="card card2">
+        <h2>More content</h2>
+        <p><h3>I'm 孙孟帅</h3><span class="card2_span">前端开发工程师</span></p>
+        <p><span  class="card2_span1">我是一匹千里马。等待伯乐的offer。如果您给我一个机会，我还您更多效率。</span>
+            <span>I am a horse. Wait for the horses of the offer. If you give me a chance, I also you more efficiency</span></p>
+    </div>
+</div>
+<!--头部信息-->
+<!--工作经历-->
+<section id="cd-timeline" class="cd-container">
+    <div class="cd-timeline-block">
+        <div class="cd-timeline-img cd-picture">
+            <img src="img/tit.png" alt="Picture">
+        </div>
+
+        <div class="cd-timeline-content">
+            <h2>在中国移动河南分公司实习</h2>
+            <p>主要负责办理各种业务。这是一个和客户直接交流的平台。不仅要有专业的业务知识。还要有超强的沟通能力。以后工作很重要。不仅仅要把技术做好。更要考虑用户体验。</p>
+            <span class="cd-date">2014-6月</span>
+        </div>
+    </div>
+
+    <div class="cd-timeline-block">
+        <div class="cd-timeline-img cd-movie">
+            <img src="img/tit.png" alt="Movie">
+        </div>
+
+        <div class="cd-timeline-content">
+            <h2>戴尔业务员</h2>
+            <p>由于自己是计算机专业。在校园招聘中面试了苏州戴尔分公司就直接去苏州戴尔分公司做业务员，工作期间，主要是和戴尔用户做售前售后服务和指导，与此同时也培养了自己的综合能力。</p>
+            <span class="cd-date">2014-10月</span>
+        </div>
+    </div>
+
+    <div class="cd-timeline-block">
+        <div class="cd-timeline-img cd-picture">
+            <img src="img/tit.png" alt="Picture">
+        </div>
+
+        <div class="cd-timeline-content">
+            <h2>网络通信业务员</h2>
+            <p>工作性质和网线通信打交道。做一些安装和调试，虽然工作辛苦。但我对这份工作很认真。因为这是自己独立后的第一份offer。工作之余。我也学会了很多经验。这是很重要的。</p>
+            <span class="cd-date">2015-4月</span>
+        </div>
+    </div>
+
+    <div class="cd-timeline-block">
+        <div class="cd-timeline-img cd-location">
+            <img src="img/tit.png" alt="Location">
+        </div>
+
+        <div class="cd-timeline-content">
+            <h2>前端WEB网上兼职&&切图</h2>
+            <p>在工作之余。自己在八戒网上找各种兼职。给一些外包公司做切图，静态页面的布局，再挣些外快的同时，也巩固了自己的专业知识。</p>
+            <span class="cd-date">2015-9月</span>
+        </div>
+    </div>
+
+    <div class="cd-timeline-block">
+        <div class="cd-timeline-img cd-location">
+            <img src="img/tit.png" alt="Location">
+        </div>
+
+        <div class="cd-timeline-content">
+            <h2>网络营销员</h2>
+            <p>在过去的一段时间，自己学到了好多与人沟通交流的机会。并且自己是计算机专业。加上自己在生活之余做的一些兼职。让自己做了一位网络营销员。也算是半个IT了吧。</p>
+            <span class="cd-date">2015-11月</span>
+        </div>
+    </div>
+
+    <div class="cd-timeline-block">
+        <div class="cd-timeline-img cd-movie">
+            <img src="img/tit.png" alt="Movie">
+        </div>
+
+        <div class="cd-timeline-content">
+            <h2>深造学习</h2>
+            <p>由于工作中。没有更加扎实的技术。所有我就来北京深造学习专业知识。深造学习了HTML5&&CSS3 PHP&&Nodejs 交互&&移动互联网开发等等这些很流行的前端技术。又一次提高了自己的专业技术。</p>
+            <span class="cd-date">2016-7月</span>
+        </div>
+    </div>
+
+    <div class="cd-timeline-block">
+        <div class="cd-timeline-img cd-picture">
+            <img src="img/tit.png" alt="Picture">
+        </div>
+
+        <div class="cd-timeline-content">
+            <h2>WEB前端工程师</h2>
+            <p>这个社会相对公平的除了高考外，那就是IT。我相信只要有技术和经验。一定会带来更好的效率和用户体验感。</p>
+            <p>本人暂离职在家。如有意向，请和我联系，可随时到岗位上班。</p>
+            <span class="cd-date">now</span>
+        </div>
+    </div>
+</section>
+
+
+<footer class="clearfix">
+    <h2 >Personal information</h2>
+    <div class="foot_box1">
+        <h3>Welcome to contact me</h3>
+        <dl class="clearfix foot_dl">
+            <dt>姓名
+                <span></span>
+            </dt>
+            <dd>孙孟帅</dd>
+            <dt>性别
+                <span></span>
+            </dt>
+            <dd>男</dd>
+            <dt>出生年月
+                <span></span>
+            </dt>
+            <dd>1992-5</dd>
+            <dt>专业
+                <span></span>
+            </dt>
+            <dd>计算机专业</dd>
+            <dt>地址
+                <span></span>
+            </dt>
+            <dd>北京市昌平区北七家镇</dd>
+            <dt>工作年限
+                <span></span>
+            </dt>
+            <dd>1年</dd>
+            <dt>邮箱
+                <span></span>
+            </dt>
+            <dd>1275420834@qq.com</dd>
+            <dt>联系方式
+                <span></span>
+            </dt>
+            <dd>13526626783</dd>
+        </dl>
+    </div>
+    <div class="foot_box2"><img src="img/baidu.jpg"></div>
+</footer>
+<!--工作经历-->
+<script>
+    $(function(){
+        var $timeline_block = $('.cd-timeline-block');
+        $timeline_block.each(function(){
+            if($(this).offset().top > $(window).scrollTop()+$(window).height()*0.75) {
+                $(this).find('.cd-timeline-img, .cd-timeline-content').addClass('is-hidden');
+            }
+        });
+        $(window).on('scroll', function(){
+            $timeline_block.each(function(){
+                if( $(this).offset().top <= $(window).scrollTop()+$(window).height()*0.75 && $(this).find('.cd-timeline-img').hasClass('is-hidden') ) {
+                    $(this).find('.cd-timeline-img, .cd-timeline-content').removeClass('is-hidden').addClass('bounce-in');
+                }
+            });
+        });
+    });
+
+</script>
+
+<!--头像信息-->
+<script type="text/javascript" src="dist/prod/js/jQuery-face-cursor.js"></script>
+<script>
+    $(".card").faceCursor();
+</script>
+<!--头像信息-->
+</body>
+</html>

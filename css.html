@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>孙孟帅作品</title>
+    <style>
+        *{
+            margin:0px;
+            padding:0px;
+            list-style:none;
+        }
+        a{
+            text-decoration:none;
+        }
+        .head{
+            width:100%;
+            height:100px;
+            background:url(img/beijingtu/gf002.gif);
+            overflow: hidden;
+        }
+        .clearfix:after{
+            display:block;
+            content:'';
+            clear:both;
+        }
+        .clearfix{
+            zoom:1;
+        }
+        #ul1{
+            width: 200px;
+            margin:30px 0 0 120px;
+        }
+        #ul1 li{
+            float: left;
+            font-size: 30px;
+            width: 24px;
+            height: 35px;
+            overflow: hidden;
+            position: relative;
+            color: #fff;
+        }
+        #ul1 img{
+            position: absolute;
+            left: 0;
+            top: 0;
+        }
+        .bd{
+            width:100%;
+            height:3730px;
+            background: url(img/beijingtu/dt.gif);
+
+        }
+
+        #top_bottom1{
+            width: 51px;
+            height: 51px;
+            position: fixed;
+            bottom:75px;
+            right: 60px;
+            background: url(img/top_bottom.png) no-repeat 0 0;
+            cursor:pointer;
+            display: none;
+            z-index: 999;}
+        #top_bottom1:hover{
+            background: url(img/top_bottom.png) no-repeat 0 -51px;
+        }
+        .bd_box1{
+            width:1000px;
+            height:3730px;
+            background:url(img/beijingtu/bj.jpg);
+            margin:0px auto;
+            overflow: hidden;
+        }
+        .tit{
+            width:700px;
+            margin:-30px 0px 0px 700px;
+            position: relative;
+        }
+        .tit li{
+            width:100px;
+            height:35px;
+            float: left;
+            font-size:17px;
+            line-height:35px;
+            text-align: center;
+            margin-right:31px;
+            cursor: pointer;
+
+        }
+        .tit .li1{
+            z-index:999;
+            position: relative;
+        }
+        .tit li a{
+            color: #fff;
+        }
+        .tit .opa{
+            position: absolute;
+            left:128px;
+            top:0px;
+            background: #e8e537;
+            opacity:0.5;
+            width:110px;
+            height:37px;
+            border:0;
+        }
+        .bd_con{
+            width:800px;
+            height:500px;
+            margin-top:50px;
+            position: relative;
+        }
+        .bd_con p{
+            background: #f0f8ff;
+            width:800px;
+            height:150px;
+            line-height:40px;
+            text-align: center;
+            font-weight: bold;
+            position: absolute;
+            left:85px;
+            top:120px;
+            padding:0 10px 0 10px;
+        }
+        .bd_con h3{
+            font-size:30px;
+            color: #fff;
+        }
+        .bd_ul1{
+            width:900px;
+        }
+        .bd_ula{
+            margin-top:80px;
+        }
+        .bd_ul1 h1{
+            color: #fff;
+            margin-bottom:20px;
+        }
+        .bd_ul1 li{
+            width:820px;
+            height:400px;
+            margin-left:80px;
+            position: relative;
+        }
+        .bd_ul1 li .bd_span1{
+            position: absolute;
+            width:30px;
+            height:30px;
+        }
+        .bd_ul1 li .bd_span1{
+            left:0px;
+            top:0px;
+        }
+        /*.bd_ul1 li .bd_span2{*/
+            /*right:0px;*/
+            /*top:0px;*/
+        /*}*/
+        .bd_ul1 li>span>img{
+            width:100%;
+            height:100%;
+        }
+        .bd_ul1 li img{
+            width:820px;
+            height:400px;
+            position: absolute;
+            left:0px;
+            top:0px;
+        }
+    </style>
+    <script src="js/jquery-1.7.2.js"></script>
+    <script src="js/css.js"></script>
+    <script src="js/move.js"></script>
+   <script src="js/title.tantiao2.js"></script>
+
+</head>
+<body>
+<!--底部到顶部-->
+<div id="top_bottom1"></div>
+<div class="head">
+    <ul id="ul1" class="clearfix">
+        <li><img src="img/num.png" /></li>
+        <li><img src="img/num.png" /></li>
+        <li class="white">:</li>
+        <li><img src="img/num.png" /></li>
+        <li><img src="img/num.png" /></li>
+        <li class="white">:</li>
+        <li><img src="img/num.png" /></li>
+        <li><img src="img/num.png" /></li>
+    </ul>
+    <ul class="tit clearfix" id="ul2">
+        <li class="li1"><a href="index.html">首页</a></li>
+        <li class="li1"><a href="css.html">HTML/CSS</a></li>
+        <li class="li1"><a href="js.html">JavaScript</a></li>
+        <li class="li1"><a href="javascript:;">CSS3/HTML5</a></li>
+        <li class="li1"><a href="personal.html">联系我</a></li>
+        <li class="opa"></li>
+    </ul>
+</div>
+<div class="bd">
+    <div class="bd_box1">
+        <div class="bd_con">
+            <h3>这是一些CSS/HTML页面</h3>
+            <p>之前工作时候切过一些小专题和网页部分内容，所以之后找了一些朋友要了写网站素材，
+                切了一些电商的首页和游戏首页，感觉很不一样，只能说各有各的特点吧。下边列出一些我自己切的首页
+                （没有特意去兼容IE低版本，因为个人比较不喜欢，调起来也较麻烦，而且目前趋势的话还是逐渐淘汰低
+                版本浏览器，不过兼容的调试也不敢怠慢下来）。</p>
+        </div>
+        <div id="bd_box2">
+            <ul class="bd_ul1">
+                <h1>No.1:游戏剑灵页面布局</h1>
+                <li>
+                    <a href="jianling/index.html"><img src="img/jianling.jpg" class="bd_photo" /></a>
+                </li>
+            </ul>
+            <ul class="bd_ul1 bd_ula">
+                <h1>No.2:网店酒仙网页面布局</h1>
+                <li><a href="jiu/index.html"><img src="img/jiu.jpg" class="bd_photo" /></a></li>
+            </ul>
+            <ul class="bd_ul1 bd_ula">
+                <h1>No.3:灵魂回响页面布局</h1>
+                <li><a href="lhhx.html"><img src="img/lhhx1.jpg" class="bd_photo" /></a></li>
+            </ul>
+            <ul class="bd_ul1 bd_ula">
+                <h1>No.4:品食工坊页面布局</h1>
+                <li><a href="gw.html"><img src="img/gw.jpg" class="bd_photo" /></a></li>
+            </ul>
+            <ul class="bd_ul1 bd_ula">
+                <h1>No.5:天猫旗舰店页面布局</h1>
+                <li><a href="WEB/html/index.html"><img src="img/csmall.jpg" class="bd_photo" /></a></li>
+            </ul>
+            <ul class="bd_ul1 bd_ula">
+                <h1>No.6:婚纱网站页面布局</h1>
+                <li><a href="hunsha/index.html"><img src="img/hunsha.jpg" class="bd_photo" /></a></li>
+            </ul>
+        </div>
+    </div>
+</div>
+</body>
+</html>

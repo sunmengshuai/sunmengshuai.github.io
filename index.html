@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>孙孟帅作品</title>
+    <style>
+        *{margin:0px; padding:0px; list-style:none;}
+.clearfix:after{display: block; content:''; clear:both;}
+.clear{zoom:1;}
+#top_bottom{width: 51px; height: 51px; position: fixed; bottom:75px; right: 60px; background: url(img/top_bottom.png) no-repeat 0 0; cursor:pointer; display: none; z-index: 999;}
+#top_bottom:hover{background: url(img/top_bottom.png) no-repeat 0 -51px;}
+a{text-decoration: none;}
+.head{
+    background: #777f99; font-family: '微软雅黑'; height: 700px;
+    width:100%; background-size: cover;}
+.top{width: 100%; height: 50px;}
+#top_box{width:100%; height: 50px; position: fixed; background: #222; z-index: 999;}
+.top_ul{height: 100%; width: 725px; float:right;}
+.logo{float:left; font-size: 40px; margin-left:100px;}
+.logo a{color:#fff;}
+.top_ul li{float:right; width: 100px; height: 45px; line-height: 45px; text-align: center; padding-right: 26px;}
+.top_ul li a,.top_ul li span{display: block; color: #fff;  }
+.top_span{width:0px; height: 3px; background: #090;}
+
+#box_bd{width: 100%; overflow: hidden; position: relative;
+    height:100%;}
+#bd_u1 .bd_tx{width: 240px; height: 240px;  border-radius:50%; border:10px solid rgba(0,0,0,0.3); overflow: hidden;
+    -webkit-transition: 0.3s all ease-out;
+      -moz-transition: 0.3s all ease-out;
+      -ms-transition: 0.3s all ease-out;
+      -o-transition: 0.3s all ease-out;
+      transition: 0.3s all ease-out;
+    position: absolute;
+    top:0px;
+    left:40%;
+    opacity: 1;
+    /*margin-left:-240px;*/
+}
+#bd_u1 .active{
+
+
+    -webkit-transform: rotateY(90deg);
+      -moz-transform: rotateY(90deg);
+      -ms-transform: rotateY(90deg);
+      -o-transform: rotateY(90deg);
+      transform: rotateY(90deg);
+}
+#bd_u1 .bd_tx2.active{
+
+    -webkit-transform: rotateY(0deg);
+      -moz-transform: rotateY(0deg);
+      -ms-transform: rotateY(0deg);
+      -o-transform: rotateY(0deg);
+      transform: rotateY(0deg);
+      opacity: 1;
+}
+.bd_tx img{width: 255px; height: 360px; position:absolute; left:-7px; top:-38px;}
+#bd_u1{width: 700px; height: 300px; margin:100px auto;}
+ .bd_tx2 p{height: 100px; line-height: 100px; font-size:31px; text-align:center; font-family:'楷体'; font-weight: bold; color: #fff;}
+ #bd_u1 .bd_tx2_con{font-size: 35px; border-bottom:1px solid #ccc; width: 420px; text-align: center; margin-left:130px;}
+  #bd_u1 .bd_tx2_con2{font-size: 25px; font-weight:normal;}
+ #bd_u1 .bd_tx2_span{width: 0px; height: 2px; position: absolute; left: 130px; top:100px; background: #fff;}
+.bd_tx2{width: 700px; height: 300px; opacity: 0; position: relative;
+    -webkit-transition: 0.3s all ease-out;
+      -moz-transition: 0.3s all ease-out;
+      -ms-transition: 0.3s all ease-out;
+      -o-transition: 0.3s all ease-out;
+      transition: 0.3s all ease-out;
+-webkit-transform: rotateY(90deg);
+      -moz-transform: rotateY(90deg);
+      -ms-transform: rotateY(90deg);
+      -o-transform: rotateY(90deg);
+      transform: rotateY(90deg);}
+
+.bd_p1{width: 500px; height: 50px; border:1px solid #ccc; color: #fff;font-size: 30px;
+    text-align:center; line-height:50px; font-weight: bold; position:absolute;
+    left:0; top:440px;}
+.bd_p1 span{background: #fff; display:block; position: absolute; transition:all .3s; opacity: 0;}
+.bd_pc1{width: 100%; height: 1px; left: -600px; top:-1px; }
+.bd_p1:hover .bd_pc1{left:0px; opacity: 1;}
+.bd_pc2{width: 1px; height: 100%; right: -1px; top:-152px;}
+.bd_p1:hover .bd_pc2{top:0px; opacity: 1;}
+.bd_pc3{width: 100%; height: 1px; right: -600px; bottom:-1px;}
+.bd_p1:hover .bd_pc3{right:0px; opacity: 1;}
+.bd_pc4{width: 1px; height: 100%; left: -1px; bottom:-152px;}
+.bd_p1:hover .bd_pc4{bottom:0px; opacity: 1;}
+
+
+    #show_sk{background:#76b852; width: 100%; height: 700px; overflow: hidden; color: #fff;}
+    #show_sk h3{width: 500px; height: 60px; line-height: 60px; text-align:center; margin:50px  auto; font-size: 40px; font-family: '黑体'; border-radius:10px;}
+    .show_part{position: relative;}
+    .show_part span{position: absolute; font-size: 20px; font-weight: bold;}
+    .show_span1{left: 213px; top:224px;}
+    .show_span2{left: 655px; top:224px;}
+    .show_span3{right: 240px; top:224px;}
+    #show_box{width: 700px; height: 100px; margin:40px auto; line-height:40px;}
+    #show_box span{opacity: 0; font-size: 20px; color: #fff; font-weight: bold;}
+
+
+    #show_ct{background:#0099FF; width: 100%; height: 600px; color: #fff; overflow: hidden;}
+    #show_ct h3{width:400px; height:100px; font-size: 40px; font-family: Raleway-Regular, 'Microsoft Yahei'; font-weight: 300; margin:50px auto; border-bottom: 2px solid #ccc; line-height: 100px; text-align: center; position: relative;}
+    .show_h3_btn{width: 0px; height: 2px; background: #fff; transition:all .3s; position: absolute; left: 0px; bottom:-2px;}
+    h3:hover .show_h3_btn{width: 400px;}
+    .show_ct_con{width: 600px; height: 50px; line-height: 50px; text-align: center; margin:0 auto; border: 1px solid #ccc; font-size: 20px; font-weight: bold;  transition:all .4s;}
+    .show_ct_con:hover{border-radius: 30px; background: #ccc; border: 1px solid #fff;}
+    .show_photo{width: 1200px; margin:60px auto; }
+    .show_photo li{width: 360px; height: 240px; border: 1px solid #090; float: left; margin-left:28px; position: relative; overflow: hidden;}
+    .show_photo li:hover .opa_box{top:0px;}
+    .show_photo li img{width: 100%; height: 100%; }
+    .show_photo div{width: 360px; height:240px; background: rgba(0,0,0,0.54902); position: absolute; left: 0px; top:145px; color: #fff; font-weight: bold; transition:all .3s;}
+    .opa_box{font-size: 20px; width: 100%; height: 40px; line-height: 40px; }
+    .opa_box h2{height:100px; line-height:100px; text-align: center;}
+    .opa_box p{margin-left:20px;}
+
+
+    #show_last{background:#252525; width: 100%; height: 700px; color: #fff; overflow: hidden;}
+    .last_box{width:900px; height: 100%; text-align: center; margin:200px auto; line-height: 100px; font-size: 30px;}
+    </style>
+<!-- 百分百运动js -->
+    <!-- <script src="move.js"></script> -->
+    <script src="js/title.tantiao.js"></script>
+    <script src="js/zQuery-animate.js"></script>
+    <script src="move-show-hidden/move.js"></script>
+    <script src="js/text.js"></script>
+    <!-- 百分比运动 -->
+</head>
+<body>
+<!-- 顶到头 -->
+<div id="top_bottom"></div>
+<!-- 顶到头 -->
+<div class="head">
+    <div id="top_box" class="clearfix">
+        <p class="logo">
+            <a href="javascript:;">Resume</a>
+        </p>
+        <ul class="top_ul clearfix">
+            <li>
+                <a href="personal.html">联系我</a>
+                <span class="top_span"></span>
+            </li>
+            <li>
+                <a href="javascript:;">H5/CSS3作品</a>
+                <span class="top_span"></span>
+            </li>
+            <li>
+                <a href="js.html">js作品</a>
+                <span class="top_span"></span>
+            </li>
+            <li>
+                <a href="css.html">css作品</a>
+                <span class="top_span"></span>
+            </li>
+            <li>
+                <a href="javascript:;">首页</a>
+                <span class="top_span"></span>
+            </li>
+        </ul>
+    </div>
+    <div class="top"></div>
+    <div id="box_bd">
+        <ul id="bd_u1">
+             <li class="bd_tx"><img src="img/xiaolian.gif" /></li>
+            <li class="bd_tx2" id="bd_tx2">
+                <p class="bd_tx2_con">Anything is possible</p>
+                <span class="bd_tx2_span" id="bd_tx2_span"></span>
+                <p>大牛和菜鸟，不在于聪明程度，而在于努力程度。</p>
+                <p class="bd_tx2_con2">我是IT新袖——Look forward to working with you</p>
+            </li>
+        </ul>
+
+        <p class="bd_p1">
+            孙孟帅 前端开发工程师
+            <span class="bd_pc1"></span>
+            <span class="bd_pc2"></span>
+            <span class="bd_pc3"></span>
+            <span class="bd_pc4"></span>
+        </p>
+    </div>
+</div>
+<!-- 百分百 -->
+<div id="show_sk" class="show_sk">
+    <h3>熟练HTML-JS—CSS3-H5程度</h3>
+    <div id="show_box"></div>
+    <div class="show_part">
+        <canvas class="cl1" width="400" height="400"></canvas>
+        <canvas class="cl1" width="400" height="400"></canvas>
+        <canvas class="cl1" width="400" height="400"></canvas>
+        <span class="show_span1">HTML、CSS</span>
+        <span class="show_span2">JS</span>
+        <span class="show_span3">JQUERY</span>
+    </div>
+</div>
+
+<div id="show_ct">
+    <h3>技能与作品展示区
+        <span class="show_h3_btn"></span>
+    </h3>
+    <p class="show_ct_con">熟练掌握 Javascript jQuery HTML/HTML5 CSS/CSS3</p>
+    <ul class="clearfix show_photo">
+        <li>
+            <a href="css.html">
+                <img src="img/css.jpg" />
+                <div class="opa_box">
+                    <h2>HTML & CSS</h2>
+                    <p>1.理解W3C标准并熟练运用</p>
+                    <p>2.精通HTML+CSS标准布局</p>
+                    <p>3.能解决个浏览器之间的兼容问题</p>
+                </div>
+            </a>
+        </li>
+        <li>
+            <a href="js.html">
+                <img src="img/js.jpg" />
+                <div  class="opa_box">
+                    <h2>Javascript</h2>
+                    <p>1.熟练掌握js原生、JQuery</p>
+                    <p>2.熟练运用ajax、jsonp进行数据交互</p>
+                    <p>3.熟练掌握面向对象机制</p>
+                </div>
+            </a>
+        </li>
+        <li>
+            <a href="javascript:;">
+                <img src="img/h5.jpg" />
+                <div  class="opa_box">
+                    <h2>CSS3 & HTML5</h2>
+                    <p>1.理解W3C标准并熟练运用</p>
+                    <p>2.精通HTML+CSS标准布局</p>
+                    <p>3.能解决个浏览器之间的兼容问题</p>
+                </div>
+            </a>
+        </li>
+    </ul>
+</div>
+
+<div id="show_last">
+    <div class="last_box">
+        <h2>PLEASE CONTACT ME</h2>
+        <h3>TEL:135 2662 6783</h3>
+        <h3>QQ:1275420834</h3>
+        <h3>Email:1275420834@qq.com</h3>
+    </div>
+</div>
+</body>
+</html>

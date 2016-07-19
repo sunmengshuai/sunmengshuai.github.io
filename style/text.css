@@ -1,0 +1,66 @@
+*{margin:0px; padding:0px; list-style:none;}
+.clearfix:after{display: block; content:''; clear:both;}
+.clear{zoom:1;}
+#top_bottom{width: 51px; height: 51px; position: fixed; bottom:75px; right: 60px; background: url(../img/top_bottom.png) no-repeat 0 0; cursor:pointer; display: none;}
+#top_bottom:hover{background: url(../img/top_bottom.png) no-repeat 0 -51px;}
+
+
+
+a{text-decoration: none;}
+.head{background:#1bbc9b; font-family: '微软雅黑'; height: 700px;}
+.top{width: 100%; height: 50px;}
+#top_box{width:100%; height: 50px; position: fixed; background: #222; z-index: 999;}
+.top_ul{height: 100%; width: 700px; float:right;}
+.logo{float:left; font-size: 40px; margin-left:100px;}
+.logo a{color:#fff;}
+.top_ul li{float:right; width: 100px; height: 45px; line-height: 45px; text-align: center; padding-right: 45px;}
+.top_ul li a,.top_ul li span{display: block; color: #fff;  }
+/*.top_span{width:0px; height: 3px; background: #090;}*/
+
+#box_bd{width: 100%; overflow: hidden;}
+.bd_tx{width: 240px; height: 240px; margin:50px auto;  border-radius:50%; border:10px solid rgba(0,0,0,0.3); overflow: hidden;
+    -webkit-transition: 0.3s all ease-out;
+      -moz-transition: 0.3s all ease-out;
+      -ms-transition: 0.3s all ease-out;
+      -o-transition: 0.3s all ease-out;
+      transition: 0.3s all ease-out;
+}
+.bd_tx:hover{
+    -webkit-transform: rotateY(20deg);
+      -moz-transform: rotateY(20deg);
+      -ms-transform: rotateY(20deg);
+      -o-transform: rotateY(20deg);
+      transform: rotateY(20deg);
+}
+.bd_tx img{width: 100%; height: 100%;}
+.bd_p1{width: 500px; height: 50px; border:1px solid #ccc; margin:50px auto; color: #fff; font-size: 30px; text-align:center; line-height:50px; position: relative; font-weight: bold;}
+.bd_p1 span{background: #fff; display:block; position: absolute; transition:all .3s; opacity: 0;}
+.bd_pc1{width: 100%; height: 1px; left: -600px; top:-1px; }
+.bd_p1:hover .bd_pc1{left:0px; opacity: 1;}
+.bd_pc2{width: 1px; height: 100%; right: -1px; top:-152px;}
+.bd_p1:hover .bd_pc2{top:0px; opacity: 1;}
+.bd_pc3{width: 100%; height: 1px; right: -600px; bottom:-1px;}
+.bd_p1:hover .bd_pc3{right:0px; opacity: 1;}
+.bd_pc4{width: 1px; height: 100%; left: -1px; bottom:-152px;}
+.bd_p1:hover .bd_pc4{bottom:0px; opacity: 1;}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

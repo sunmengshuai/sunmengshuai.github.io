@@ -1,0 +1,359 @@
+@charset "utf-8";
+/* CSS Document */
+
+		/*头部导航栏，banner*/
+		/*1,顶部导航栏*/
+		
+	/*摄影展示*/
+	.photo-show-big{
+		width:1410px;
+		height:780px;
+		margin:20px auto;
+		}
+	.photo-show{
+		width:1100px;
+		height:780px;
+		margin:0 auto;
+		}
+	/*提取p标签公共类*/
+	.p-title{
+		width:1410px;
+		height:48px;
+		font:24px "黑体";
+		text-align:center;
+		line-height:48px;
+		color:#CC0001;
+		}
+	.photo-show-big .show-title span{
+		font-family:Arial;
+		}
+	.photo-show .photo-display{
+		width:1100px;
+		height:730px;
+		}
+	.photo-left{
+		width:264px;
+		height:730px;
+		margin:7px 14px 0 0;
+		float:left;
+		
+		}
+	.photo-left .left-top a{
+		width:264px;
+		height:352px;
+		display: block;
+		
+		}
+	.photo-left .left-top{
+		width:264px;
+		height:352px;
+		overflow: hidden;
+		position: relative;
+		}
+	.left-top .up1{
+		width:264px;
+		height:352px;
+		position: absolute;
+		left:0;
+		top:352px;
+		background:url(../images/n_08.png);	
+		font:20px/402px "微软雅黑";
+		color:#FFF;
+		text-align: center;
+	}
+	.photo-left .left-bottom{
+		width:264px;
+		height:352px;
+		overflow: hidden;
+		position: relative;
+		}
+	.left-bottom .up1{
+		width:264px;
+		height:352px;
+		position: absolute;
+		left:0;
+		top:352px;
+		background:url(../images/n_08.png);	
+		font:20px/402px "微软雅黑";
+		color:#FFF;
+		text-align: center;
+	}
+	.photo-center{
+		width:545px;
+		height:730px;
+		margin-right:14px;
+		margin:7px 14px 0 0;
+		float:left;
+		position: relative;
+		overflow: hidden;
+		}
+	.photo-center .up2{
+		width:545px;
+		height:730px;
+		position: absolute;
+		left:0;
+		top:730px;
+		background:url(../images/n_02.png);	
+		font:20px/800px "微软雅黑";
+		color:#FFF;
+		text-align: center;
+	}
+	.photo-right{
+		width:263px;
+		height:730px;
+		margin-top:7px;
+		float:left;
+		}
+	.right-bottom,.left-bottom{
+		margin-top:11px;
+		}
+	.photo-right .right-top{
+		width:264px;
+		height:352px;
+		overflow: hidden;
+		position: relative;
+		}
+	.right-top .up1{
+		width:264px;
+		height:352px;
+		position: absolute;
+		left:0;
+		top:352px;
+		background:url(../images/n_08.png);	
+		font:20px/402px "微软雅黑";
+		color:#FFF;
+		text-align: center;
+	}
+	.photo-right .right-bottom{
+		width:264px;
+		height:352px;
+		overflow: hidden;
+		position: relative;
+		}
+	.right-bottom .up1{
+		width:264px;
+		height:352px;
+		position: absolute;
+		left:0;
+		top:352px;
+		background:url(../images/n_08.png);	
+		font:20px/402px "微软雅黑";
+		color:#FFF;
+		text-align: center;
+
+	}
+	/*摄影客片展示*/
+	.show-video-big{
+		width:1410px;
+		height:870px;
+		margin:20px auto;
+		}
+	.show-video-big .show-video{
+		width:1100px;
+		height:850px;
+		margin:10px auto;
+		}
+	.video-left div,.video-center div,.video-right div{position: relative;overflow: hidden;}
+	.video-left div span,.video-center div span,.video-right div span{
+		width:357px;
+		height:60px;
+		background: rgba(0,0,0,0.6);
+		position: absolute;
+		bottom: -40px;
+		left: 0;
+		font:bold 18px/60px "微软雅黑";
+		color:#fff;
+		text-align: center;
+	}
+	.video-public{
+		height:800px;
+		width:357px;
+		margin-right:14px;
+		float:left;
+		}
+	.video-right{
+		margin:0;
+	}
+	.video-public div{
+		margin-bottom:13px;
+	}
+	
+	/*跟拍*/
+	.genpai-big{
+		width:1410px;
+		height:420px;
+		margin:20px auto;
+	}
+	.genpai-big .genpai{
+		width:1100px;
+		height:347px;
+		margin:10px auto;
+		
+	}
+	.genpai-big .genpai li{
+		width:267px;
+		height:337px;
+		float:left;
+		margin-right:10px;
+		background-color: black;
+		}
+	
+	.genpai-big .genpai .genpai04{
+		margin-right:0;
+		}
+	.anli-big{
+		width:1410px;
+		height:520px;
+		margin:20px auto;
+		position:relative;
+		}
+	.anli-big .anli{
+		width:1100px;
+		height:450px;
+		margin:10px auto;
+		position: relative;
+		}
+	.anli span{
+		width:40px;
+		height: 70px;
+		background:url(../images/arr.png) no-repeat;
+		position: absolute;
+		top:50%;
+		margin-top: -35px;
+		cursor: pointer;
+	}
+	.anli .arr-l{
+		background-position: left top;
+		left:0;
+	}
+	.anli .arr-r{
+		background-position: right top;
+		right:0;
+	}
+	.anli-big .anli li{
+		float:left;
+		margin:0 0 18px 45px;
+		
+		}
+		/*套系价格*/
+	.set-price-big{
+		width:1410px;
+		height:380px;
+		margin:20px auto;
+		}
+	.set-price-big .set-price{
+		width:1100px;
+		height:240px;
+		margin:10px auto;
+	
+		}
+	.set-price-big .set-price div{
+		float:left;
+		margin:10px 0 0 25px;
+		box-shadow: 0 10px 10px rgba(0,0,0,0.1);
+		transition:all 0.3s;
+		-webkit-transition:all 0.3s;
+		-moz-transition:all 0.3s;
+		-o-transition:all 0.3s;
+		-ms-transition:all 0.3s;
+		}
+	.set-price-big .set-price div:hover{
+		transform: translate(0,-5px);
+	}
+	.set-price-big .price-detail .sort{
+		width:100px;
+		height:30px;
+		margin-left:20px;
+		background:url(../images/price-button.png) no-repeat;
+		float:left;
+		}
+	.set-price-big .price-detail{
+		width:1100px;
+		height:60px;
+		margin:10px auto;
+		}
+	.set-price-big .price-detail div p{
+		font:bold 18px "微软雅黑";
+		color:white;
+		line-height:30px;
+		text-align:center;
+		}
+	.set-price-big .price-detail .sort-price p{
+		margin-left:8px;
+		color:#CC0001;
+			}
+	.set-price-big .price-detail .sort p a{
+		text-decoration:none;
+		color:white;
+		}
+	.set-price-big .price-detail .sort p a:hover{
+		display:block; 
+		text-decoration:none;
+		color:white;
+		background:url(../images/price-button2.png) no-repeat;
+	}
+	.set-price-big .price-detail .sort-price{
+		float:left;
+		}
+	.price-detail01,.price-detail02,.price-detail03,.price-detail04,.price-detail05{
+		margin-left:5px;
+		float:left;
+		}
+	/*提供的服务*/
+	.service-big{
+		width:1100px;
+		height:400px;
+		background:url(../images/service-bg.jpg) no-repeat;
+		margin:20px auto;
+		}
+	.service-big .service-left{
+		width:420px;
+		height:400px;
+		float:left;
+		}
+	.service-big .service-left p{
+		font-size:12px;
+		color:#666;
+		padding-top:8px;
+		padding-left:5px;
+		}
+	.service-big .service-left .service-title,.service-big .service-right .service-title{
+		color:#CC0001;
+		font:normal 22px "黑体";
+		padding-top:20px;
+		
+		}
+	.service-big .service-right .service-title{padding-left:25px;}
+	.service-big .service-right{
+		width:420px;
+		height:400px;
+		float:right;
+		}
+	.service-big .service-right p{
+		padding:0 10px;
+		height:36px;
+		line-height:36px;
+		font:14px "宋体";
+		color:#666;
+		margin:10px 0 20px 30px;
+		}
+	.service-big .service-right .service-right-public{
+		padding-left:80px;
+		height:36px;
+		line-height:36px;
+		font:18px "微软雅黑";
+		color:#CC0001;
+		margin-bottom:10px;
+		background:url(../images/number01.png) no-repeat left;
+		}
+	.service-big .service-right .service01{
+		margin-top:20px;
+		}
+	.service-big .service-right .service02{
+		background:url(../images/number02.png) no-repeat left;
+		}
+	.service-big .service-right .service03{
+		background:url(../images/number03.png) no-repeat left;
+		}
+				
+		

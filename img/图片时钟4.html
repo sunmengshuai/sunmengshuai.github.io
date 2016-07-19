@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>智能社--http://www.zhinengshe.com</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            list-style: none;
+        }
+        #ul1{
+            width: 200px;
+            margin: 100px auto;
+        }
+        #ul1 li{
+            float: left;
+            font-size: 30px;
+            width: 24px;
+            height: 35px;
+            overflow: hidden;
+            position: relative;
+        }
+        #ul1 img{
+            position: absolute;
+            left: 0;
+            top: 0;
+        }
+    </style>
+    <script src="move.js"></script>
+    <script>
+        function toDouble(n){
+            return n<10?'0'+n:''+n;
+        }
+        window.onload = function () {
+            var oUl=document.getElementById('ul1');
+            var aImg=oUl.getElementsByTagName('img');
+
+            function clock(){
+                var oDate=new Date();
+                var str=toDouble(oDate.getHours())+toDouble(oDate.getMinutes())+toDouble(oDate.getSeconds());
+                for(var i=0; i<aImg.length; i++){
+                    // aImg[i].style.top=-35*str.charAt(i)+'px';
+                    move(aImg[i], {top: -35*str.charAt(i)}, {easing: 'linear', duration: 500});
+                }
+            }
+            clock();
+            setInterval(clock, 1000);
+        };
+    </script>
+</head>
+<body>
+    <ul id="ul1">
+        <li><img src="num.png"></li>
+        <li><img src="num.png"></li>
+        <li>:</li>
+        <li><img src="num.png"></li>
+        <li><img src="num.png"></li>
+        <li>:</li>
+        <li><img src="num.png"></li>
+        <li><img src="num.png"></li>
+    </ul>
+</body>
+</html>

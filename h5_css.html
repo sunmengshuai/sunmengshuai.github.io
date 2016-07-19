@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        *{
+            margin:0px;
+            padding:0px;
+            list-style:none;
+        }
+        body{
+            height:1000px;
+            background: #dcffe8;
+        }
+        a{
+            text-decoration:none;
+        }
+        img{
+            vertical-align: top;
+        }
+        /*导航栏*/
+        .head{
+            width:100%;
+            height:100px;
+            background:url(img/beijingtu/gf002.gif);
+            overflow: hidden;
+        }
+        .clearfix:after{
+            display:block;
+            content:'';
+            clear:both;
+        }
+        .clearfix{
+            zoom:1;
+        }
+        #ul1{
+            width: 200px;
+            margin:30px 0 0 120px;
+        }
+        #ul1 li{
+            float: left;
+            font-size: 30px;
+            width: 24px;
+            height: 35px;
+            overflow: hidden;
+            position: relative;
+            color: #fff;
+        }
+        #ul1 img{
+            position: absolute;
+            left: 0;
+            top: 0;
+        }
+        .bd{
+            width:100%;
+            height:2000px;
+            background: url(img/beijingtu/dt.gif);
+
+        }
+
+        #top_bottom1{
+            width: 51px;
+            height: 51px;
+            position: fixed;
+            bottom:75px;
+            right: 60px;
+            background: url(img/top_bottom.png) no-repeat 0 0;
+            cursor:pointer;
+            display: none;
+            z-index: 999;}
+        #top_bottom1:hover{
+            background: url(img/top_bottom.png) no-repeat 0 -51px;
+        }
+        .tit{
+            width:700px;
+            margin:-30px 0px 0px 700px;
+            position: relative;
+        }
+        .tit li{
+            width:100px;
+            height:35px;
+            float: left;
+            font-size:17px;
+            line-height:35px;
+            text-align: center;
+            margin-right:32px;
+            cursor: pointer;
+
+        }
+        .tit .li1{
+            z-index:999;
+            position: relative;
+        }
+        .tit li a{
+            color: #fff;
+        }
+        .tit .opa{
+            position: absolute;
+            left:260px;
+            top:0px;
+            background: #e8e537;
+            opacity:0.5;
+            width:110px;
+            height:37px;
+            border:0;
+        }
+        /*js作品css*/
+        .bd_box3{
+            width: 1000px;
+            height:4165px;
+            margin:0px auto;
+            background: url(img/beijingtu/bj5.jpg);
+            overflow: hidden;
+        }
+        #box{
+            width: 700px;
+            height: 450px;
+            margin:65px 0px 0px 45px;
+            position:relative;
+            overflow: hidden;
+            background: #ccc;
+        }
+        #box .ul1{
+            position: absolute;
+            left: 0px;
+            top:50%;
+            border: 1px solid #000;
+            margin-top:-112px;
+        }
+        #box .ul1 li{
+            float:left;
+            width: 225px;
+            height: 225px;
+            position: relative;
+        }
+        #box .ul1 img{
+            width: 100%;
+        }
+        .bd_box3{
+            position: relative;
+        }
+        /*右边文字部分*/
+        .bd_box3 p{
+            width:60px;
+            height:500px;
+            position:absolute;
+            right:40px;
+            font-size:40px;
+            padding:0 20px 0 20px;
+            color: #fff;
+            line-height:60px;
+            text-align: center;
+            font-weight:bold;
+            /*margin:100px 0 100px 0;*/
+        }
+        .bd_box3 .bd_box_con1{
+            top:120px;
+        }
+        .bd_box3 .bd_box_con2{
+            top:700px;
+        }
+        .bd_box3 .bd_box_con3{
+            top:1260px;
+        }
+        .bd_box3 .bd_box_con4{
+            top:1890px;
+        }
+        .bd_box3 .bd_box_con5{
+            top:2500px;
+        }
+        .bd_box3 .bd_box_con6{
+            top:3120px;
+        }
+        .bd_box3 .bd_box_con7{
+            top:3720px;
+        }
+        /*导航栏*/
+    </style>
+    <script src="js/h5.js"></script>
+    <script src="js/move.js"></script>
+    <script src="js/title.tantiao2.js"></script>
+    <script src="js/jquery-1.7.2.js"></script>
+    <script src="sfqmove1/move1.js"></script>
+</head>
+<body>
+<!--底部到顶部-->
+<div id="top_bottom1"></div>
+<div class="head">
+    <ul id="ul1" class="clearfix">
+        <li><img src="img/num.png" /></li>
+        <li><img src="img/num.png" /></li>
+        <li class="white">:</li>
+        <li><img src="img/num.png" /></li>
+        <li><img src="img/num.png" /></li>
+        <li class="white">:</li>
+        <li><img src="img/num.png" /></li>
+        <li><img src="img/num.png" /></li>
+    </ul>
+    <ul class="tit clearfix" id="ul2">
+        <li class="li1"><a href="index.html">首页</a></li>
+        <li class="li1"><a href="css.html">HTML/CSS</a></li>
+        <li class="li1"><a href="js.html">JavaScript</a></li>
+        <li class="li1"><a href="javascript:;">CSS3/HTML5</a></li>
+        <li class="li1"><a href="personal.html">联系我</a></li>
+        <li class="opa"></li>
+    </ul>
+</div>
+</body>
+</html>

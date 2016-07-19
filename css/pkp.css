@@ -1,0 +1,16 @@
+
+#znsRotatePic { width: 750px; height: 380px; position: relative; background: #353535; overflow: hidden; margin:95px 0 0 25px;}
+#znsRotatePic li { width: 250px; height: 340px; position: absolute;}
+#znsRotatePic li span { width: 212px; height: 90px; overflow: hidden; position: absolute; bottom: 0; left: 20px;
+	/*background:url('img/shade.png') !important;
+	background:none;
+	filter:none!important;*/
+	/*filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(src='img/shade.png',sizingMethod='img');*/
+}
+#znsRotatePic img { position: relative; }
+#znsRotatePic .pic1 { top: 20px; left: 25px; }
+#znsRotatePic .pic1 img {top:20px;}
+#znsRotatePic .pic2 { top: 55px; left: 270px; padding-top:20px;}
+#znsRotatePic .pic3 { top: 20px; left: 540px; }
+#znsRotatePic .pic3 img {top:20px;}
+#znsRotatePic .unactive {filter: alpha(opacity=20); opacity: 0.4;}

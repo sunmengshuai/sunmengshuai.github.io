@@ -1,0 +1,40 @@
+/* CSS Document */
+
+.header{height:445px;background:url(../images/header-bg.jpg) center center no-repeat;}
+.nav{margin-bottom:265px;}
+.news{height:2050px;margin-top:50px;}
+.news-in{height:2050px;}
+.news-in .news-title{height:100px;}
+.news-in .news-title .location{width:600px;height:95px;float:left;padding-top:5px;}
+.news-in .news-title .location p{font:14px/28px "微软雅黑";color:#999;}
+.news-in .news-title .location .latest{font:28px/40px "微软雅黑";color:#E53B3B;}
+.news-in .news-nav{width:810px;height:60px;float:left;}
+.news-in .news-nav ul li{float:left;width:202px;height:62px;text-align:center;font: 18px/60px "微软雅黑"; color:#666;border:1px solid #E53B3B;margin-left:-1px;}
+.news-in .news-nav ul li a{color:#666;}
+.news-in .news-nav ul li a:hover{background:#E53B3B;color:#fff;display:block;width:200px;height:60px;line-height:60px;text-decoration:none;border:1px solid #fff;}
+.news-content{margin-top:50px;}
+.news-content .content01,.news-content .content02,.news-content .content03，.news-content .content04{border-bottom:1px #ccc solid;}
+.p-style{font:14px/20px "微软雅黑";color:#999;margin-top:20px;}
+.span-style{font:10px/18px "微软雅黑";color:#aaa;}
+.h5-style{font:24px/34px "微软雅黑";color:#333;margin-bottom:10px;}
+.news-content img{margin-bottom:20px;}
+.view{width:200px;height:40px;display:block;margin:20px auto 0 auto;}
+.view a:hover{background:#E53B3B;color:#fff; font:14px/40px "微软雅黑"; display:block;text-align:center;}
+.view a{width:200px;height:40px; border:1px #E53B3B solid;display:block;text-align:center; color:#666;font:14px/40px "微软雅黑"; }
+.news-content .content01 div{width:320px;height:550px;float:left;margin-right:25px;margin-top:50px;}
+.first{margin-left:20px;}
+.news-content .content02 div{width:320px;height:550px;float:left;margin-right:25px;margin-top:50px;}
+.news-content .content03 div{width:320px;height:550px;float:left;margin-right:25px;margin-top:50px;}
+.news-content .content04 div{width:320px;height:550px;float:left;margin-right:25px;margin-top:50px;}
+.page{height:20px;}
+.page div{width:260px;height:20px;margin:0 auto;}
+.page div a{font:14px/20px "微软雅黑";}
+.page div em{padding:0 15px; color:#666;}
+.page div span{padding:10px; color:#666;}
+.ads{
+	margin:20px 0;
+}
+.ads-in{height:152px;}
+.ads-in div{width:331px; height:152px; margin-right:10px;float:left;}
+
+

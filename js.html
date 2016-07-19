@@ -1,0 +1,502 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>孙孟帅作品</title>
+    <style>
+/*苹果滑动效果css*/
+#iphone { width: 282px; height: 583px; background: url(img/pgzy.png); position: relative; margin:190px 0 0 240px;}
+#wrap { width: 247px; height: 443px; position: absolute; top: 67px; left: 18px; overflow:hidden; }
+#iphone ul { width: 989px; height: 445px; cursor: pointer; position: absolute; top: 0px; left: 0px; }
+#iphone li { float: left; width:247px; height:443px; overflow:hidden; }
+/*苹果滑动效果css*/
+
+/*3D轮换图*/
+#znsRotatePic { width: 750px; height: 380px; position: relative; background: #353535; overflow: hidden; margin:95px 0 0 25px;}
+#znsRotatePic li { width: 250px; height: 340px; position: absolute;}
+#znsRotatePic li span { width: 212px; height: 90px; overflow: hidden; position: absolute; bottom: 0; left: 20px;
+}
+#znsRotatePic img { position: relative; }
+#znsRotatePic .pic1 { top: 20px; left: 25px; }
+#znsRotatePic .pic1 img {top:20px;}
+#znsRotatePic .pic2 { top: 55px; left: 270px; padding-top:20px;}
+#znsRotatePic .pic3 { top: 20px; left: 540px; }
+#znsRotatePic .pic3 img {top:20px;}
+#znsRotatePic .unactive {filter: alpha(opacity=20); opacity: 0.4;}
+/*3D轮换图*/
+
+        *{
+            margin:0px;
+            padding:0px;
+            list-style:none;
+        }
+        a{
+            text-decoration:none;
+        }
+        img{
+            vertical-align: top;
+        }
+        .head{
+            width:100%;
+            height:100px;
+            background:url(img/beijingtu/gf002.gif);
+            overflow: hidden;
+        }
+        .clearfix:after{
+            display:block;
+            content:'';
+            clear:both;
+        }
+        .clearfix{
+            zoom:1;
+        }
+        #ul1{
+            width: 200px;
+            margin:30px 0 0 120px;
+        }
+        #ul1 li{
+            float: left;
+            font-size: 30px;
+            width: 24px;
+            height: 35px;
+            overflow: hidden;
+            position: relative;
+            color: #fff;
+        }
+        #ul1 img{
+            position: absolute;
+            left: 0;
+            top: 0;
+        }
+        .bd{
+            width:100%;
+            height:2000px;
+            background: url(img/beijingtu/dt.gif);
+
+        }
+
+        #top_bottom1{
+            width: 51px;
+            height: 51px;
+            position: fixed;
+            bottom:75px;
+            right: 60px;
+            background: url(img/top_bottom.png) no-repeat 0 0;
+            cursor:pointer;
+            display: none;
+            z-index: 999;}
+        #top_bottom1:hover{
+            background: url(img/top_bottom.png) no-repeat 0 -51px;
+        }
+        .tit{
+            width:700px;
+            margin:-30px 0px 0px 700px;
+            position: relative;
+        }
+        .tit li{
+            width:100px;
+            height:35px;
+            float: left;
+            font-size:17px;
+            line-height:35px;
+            text-align: center;
+            margin-right:32px;
+            cursor: pointer;
+
+        }
+        .tit .li1{
+            z-index:999;
+            position: relative;
+        }
+        .tit li a{
+            color: #fff;
+        }
+        .tit .opa{
+            position: absolute;
+            left:260px;
+            top:0px;
+            background: #e8e537;
+            opacity:0.5;
+            width:110px;
+            height:37px;
+            border:0;
+        }
+        /*js作品css*/
+        .bd_box3{
+            width: 1000px;
+            height:4165px;
+            margin:0px auto;
+            background: url(img/beijingtu/bj5.jpg);
+            overflow: hidden;
+        }
+        #box{
+            width: 700px;
+            height: 450px;
+            margin:65px 0px 0px 45px;
+            position:relative;
+            overflow: hidden;
+            background: #ccc;
+        }
+        #box .ul1{
+            position: absolute;
+            left: 0px;
+            top:50%;
+            border: 1px solid #000;
+            margin-top:-112px;
+        }
+        #box .ul1 li{
+            float:left;
+            width: 225px;
+            height: 225px;
+            position: relative;
+        }
+        #box .ul1 img{
+            width: 100%;
+        }
+        .bd_box3{
+            position: relative;
+        }
+        /*右边文字部分*/
+       .bd_box3 p{
+            width:60px;
+            height:500px;
+            position:absolute;
+            right:40px;
+           font-size:40px;
+           padding:0 20px 0 20px;
+           color: #fff;
+           line-height:60px;
+           text-align: center;
+           font-weight:bold;
+            /*margin:100px 0 100px 0;*/
+        }
+       .bd_box3 .bd_box_con1{
+           top:120px;
+       }
+        .bd_box3 .bd_box_con2{
+            top:700px;
+        }
+        .bd_box3 .bd_box_con3{
+            top:1260px;
+        }
+        .bd_box3 .bd_box_con4{
+            top:1890px;
+        }
+        .bd_box3 .bd_box_con5{
+            top:2500px;
+        }
+        .bd_box3 .bd_box_con6{
+            top:3120px;
+        }
+        .bd_box3 .bd_box_con7{
+            top:3720px;
+        }
+
+        /*手风琴*/
+        #ul3{
+            height: 300px;
+            position: relative;
+            overflow: hidden;
+            margin:190px 0px 0px 45px;
+        }
+        #ul3 li{
+            width:500px;
+            height: 300px;
+            position: absolute;
+            left: 0px;
+            top: 0px;
+        }
+        #ul3 img{
+            width: 100%;
+            height: 100%;
+        }
+        #bd_move{
+            width:660px;
+            margin:15px 0 0 90px;
+        }
+        #ul5{
+            width:660px;
+            /*margin:15px 0 0 90px;*/
+        }
+        #ul5 li{
+            float: left;
+            margin:10px 10px;
+            width:180px;
+            height:180px;
+            position: relative;
+            overflow: hidden;
+        }
+        #ul5 li img{
+            width:100%;
+        }
+        #ul5 li span{
+            position: absolute;
+            left:180px;
+            top:0px;
+            width:100%;
+            height:100%;
+            background: rgba(0,0,0,.3);
+            text-align: center;
+            font-size:30px;
+            color: #fff;
+            line-height:180px;
+        }
+        /*移入移出效果*/
+
+        /*轮换效果*/
+            #pht_box{
+                width:600px;
+                height:400px;
+                position: relative;
+                overflow:hidden;
+                margin:190px 0 0 110px;
+            }
+            #pht_ul1{
+                position: absolute;
+                left:0px;
+                top:0px;
+            }
+            #pht_ul1 li{
+                float: left;
+                width:600px;
+                height:400px;
+
+            }
+            #pht_ul1 li img{
+                width:100%;
+                height:100%;
+            }
+            #pht_ol1{
+                position: absolute;
+                right:30%;
+                bottom:20px;
+
+            }
+            #pht_ol1 li{
+                width:30px;
+                height:30px;
+                border-radius:50%;
+                background: #c1b7cc;
+                float: left;
+                cursor: pointer;
+                margin-left:20px;
+
+            }
+        #pht_ol1 li.active{
+            background:#909;
+        }
+            #pht_box a{
+                position: absolute;
+                width:60px;
+                height:50px;
+                text-align: center;
+                line-height:50px;
+                color: #fff;
+                background: rgba(0,0,0,.3);
+                z-index:9;
+                margin-top:-20px;
+                font-size:30px;
+                border-radius:20%;
+            }
+        #pht_box a:hover{
+            background: #333;
+        }
+            #left{
+                left:0px;
+                top:50%;
+
+            }
+        #right{
+            right:0px;
+            top:50%;
+        }
+        /*轮换效果*/
+        /*点击随机换位置*/
+        #chage{
+            width:450px;
+            margin:150px 0 0 180px;
+            /*border:1px solid #000;*/
+        }
+        #chage ul{
+            width:450px;
+            position: relative;
+        }
+        #chage_ul1 li{
+            float: left;
+            width:130px;
+            height:130px;
+            margin:10px;
+        }
+        #chage_ul1 li.active{
+            border:3px solid #f00;
+        }
+        #chage_ul1 li img{
+            width:100%;
+            height:100%;
+        }
+        #chage_one{
+            width:100px;
+            height:50px;
+            display:block;
+            background:#ccc;
+            color: #fff;
+            text-align:center;
+            line-height:50px;
+            margin:0 0 10px 188px;
+            font-weight:bold;
+            border-radius:6px;
+        }
+        #chage_one:hover{
+            background:#00cc66;
+        }
+        /*点击随机换位置*/
+    </style>
+    <script src="js/move.js"></script>
+    <script src="js/jsweb.js"></script>
+    <script src="js/jquery-1.7.2.js"></script>
+    <script src="js/title.tantiao2.js"></script>
+    <script src="sfqmove1/move1.js"></script>
+</head>
+<body>
+<!--底部到顶部-->
+<div id="top_bottom1"></div>
+<div class="head">
+    <ul id="ul1" class="clearfix">
+        <li><img src="img/num.png" /></li>
+        <li><img src="img/num.png" /></li>
+        <li class="white">:</li>
+        <li><img src="img/num.png" /></li>
+        <li><img src="img/num.png" /></li>
+        <li class="white">:</li>
+        <li><img src="img/num.png" /></li>
+        <li><img src="img/num.png" /></li>
+    </ul>
+    <ul class="tit clearfix" id="ul2">
+        <li class="li1"><a href="index.html">首页</a></li>
+        <li class="li1"><a href="css.html">HTML/CSS</a></li>
+        <li class="li1"><a href="js.html">JavaScript</a></li>
+        <li class="li1"><a href="javascript:;">CSS3/HTML5</a></li>
+        <li class="li1"><a href="personal.html">联系我</a></li>
+        <li class="opa"></li>
+    </ul>
+</div>
+<div class="bd">
+    <div class="bd_box3">
+        <p class="bd_box_con1">左右拖动切换</p>
+        <p class="bd_box_con2">手风琴效果</p>
+        <p class="bd_box_con3">模拟苹果6s翻页</p>
+        <p class="bd_box_con4">移入移出效果</p>
+        <p class="bd_box_con5">点击旋转效果</p>
+        <p class="bd_box_con6">轮播图效果</p>
+        <p class="bd_box_con7">点击随机切换</p>
+        <div id="box">
+            <ul class="ul1 clearfix">
+                <li><img src="img/1-1.jpg" /></li>
+                <li><img src="img/1-2.jpg" /></li>
+                <li><img src="img/1-3.jpg" /></li>
+                <li><img src="img/1-4.jpg" /></li>
+                <li><img src="img/1-5.jpg" /></li>
+                <li><img src="img/1-6.jpg" /></li>
+            </ul>
+        </div>
+    <!--手风琴-->
+        <div id="box1">
+            <ul id="ul3">
+                <li><img src="img/pg1.jpg" /></li>
+                <li><img src="img/pg2.jpg" /></li>
+                <li><img src="img/pg3.jpg" /></li>
+                <li><img src="img/pg4.jpg" /></li>
+                <li><img src="img/pg5.jpg" /></li>
+                <li><img src="img/pg6.jpg" /></li>
+                <li><img src="img/pg7.jpg" /></li>
+            </ul>
+        </div>
+    <!--苹果界面滑动-->
+        <div id="iphone">
+            <div id="wrap">
+                <ul id="ul4">
+                    <li style="background:url(img/pic1.jpg);" />
+                    <li style="background:url(img/pic2.jpg);" />
+                    <li style="background:url(img/pic3.jpg);" />
+                    <li style="background:url(img/pic3.jpg);" />
+                </ul>
+            </div>
+        </div>
+    <!--苹果界面滑动-->
+    <!--移入移出效果-->
+        <div id="bd_move">
+            <ul id="ul5" class="clearfix">
+                <li><img src="img/start1.gif" /><span>js效果1</span></li>
+                <li><img src="img/start2.gif" /><span>js效果2</span></li>
+                <li><img src="img/start3.gif" /><span>js效果3</span></li>
+                <li><img src="img/start4.gif" /><span>js效果4</span></li>
+                <li><img src="img/start8.gif" /><span>js效果5</span></li>
+                <li><img src="img/start6.gif" /><span>js效果6</span></li>
+                <li><img src="img/start7.gif" /><span>js效果7</span></li>
+                <li><img src="img/start5.gif" /><span>js效果8</span></li>
+                <li><img src="img/start1.gif" /><span>js效果9</span></li>
+            </ul>
+        </div>
+    <!--移入移出效果-->
+
+    <!--三维图片-->
+        <div>
+            <ul id="znsRotatePic">
+                <li class="pic1">
+                    <a href="javascript:;"><img src="img/main_a3.jpg" alt="pic1" class="unactive"
+                        longdesc="http://www.zns.com" width="187" /></a>
+                    <span></span>
+                </li>
+                <li class="pic2">
+                    <a href="javascript:;"><img src="img/main_a3_1.jpg" alt="pic2" longdesc="http://www.zns.com"
+                        width="208" /></a>
+                    <span></span>
+                </li>
+                <li class="pic3">
+                    <a href="javascript:;"><img src="img/main_a3_2.jpg" alt="pic3" class="unactive"
+                        longdesc="javascript:;" width="187" /></a>
+                    <span></span>
+                </li>
+            </ul>
+        </div>
+        <!--三维图片-->
+        <!--图片轮换-->
+            <div id="pht_box">
+                <a href="javascript:;" id="left">←</a>
+                <a href="javascript:;" id="right">→</a>
+                <ul id="pht_ul1" class="clearfix">
+                    <li><img src="hunsha/images/news-img02.png" /></li>
+                    <li><img src="hunsha/images/news-img03.png" /></li>
+                    <li><img src="hunsha/images/news-img07.png" /></li>
+                    <li><img src="hunsha/images/news-img12.png" /></li>
+                </ul>
+                <ol id="pht_ol1" class="clearfix">
+                    <li class="active"></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                </ol>
+            </div>
+
+        <!--图片轮换-->
+
+        <!--点击随机切换-->
+            <div id="chage">
+                <a href="javascript:;" id="chage_one">点击切换</a>
+                <ul id="chage_ul1" class="clearfix">
+                    <li><img src="img/beijingtu/neibu/01.jpg" /></li>
+                    <li><img src="img/beijingtu/neibu/02.jpg" /></li>
+                    <li><img src="img/beijingtu/neibu/03.jpg" /></li>
+                    <li><img src="img/beijingtu/neibu/04.jpg" /></li>
+                    <li><img src="img/beijingtu/neibu/05.jpg" /></li>
+                    <li><img src="img/beijingtu/neibu/06.jpg" /></li>
+                    <li><img src="img/beijingtu/neibu/07.jpg" /></li>
+                    <li><img src="img/beijingtu/neibu/08.jpg" /></li>
+                    <li><img src="img/beijingtu/neibu/01.jpg" /></li>
+                </ul>
+            </div>
+        <!--点击随机切换-->
+    </div>
+</div>
+</body>
+</html>
